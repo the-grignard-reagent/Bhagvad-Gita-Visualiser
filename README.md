@@ -1,3 +1,9 @@
+### Want to recite all the shlokas of the Bhagvad Gita, but have less effective time to memorise. Here's the solution, I have created a webapp where one can Recite the Shlokas and Verses at their fingertips.
+### Created with the Bhagvad Gita API, this will be a much better solution for anyone who want to enhance their moral values and their spiritual journey.
+
+[Uploading Screencast from 09-08-23 06:49:46 PM IST.webm…]()
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
