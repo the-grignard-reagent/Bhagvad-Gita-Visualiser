@@ -1,4 +1,7 @@
+/* Importing Google Fonts for the project */
 @import url('https://fonts.googleapis.com/css2?family=Amita&family=Kalam&display=swap');
+
+/* Styles for the main card container */
 .card_cont {
     perspective: 150rem;
     position: relative;
@@ -8,6 +11,7 @@
     background: none;
 }
 
+/* Styles for the cards (front and back) */
 .cards {
     display: flex;
     align-items: center;
@@ -33,21 +37,25 @@
     animation: shadow 2s infinite;
 }
 
+/* Styles for the front of the card (Sloka and Transliteration) */
 .slok {
     line-height: 40px;
     font-size: x-large;
     flex-direction: column;
 }
 
+/* Styles for the back of the card (Translation) */
 .translation {
     flex-direction: column;
     font-size: 1.2rem;
 }
 
+/* Styles for the flipped card */
 .cards.translation {
     transform: rotateY(-180deg);
 }
 
+/* Styles for the flip button */
 .flip {
     width: 100%;
     font-family: 'Kalam', cursive;
@@ -55,19 +63,23 @@
     display: flex;
 }
 
+/* Styles for the "See Translation" button */
 .seetrans {
     justify-content: end;
 }
 
+/* Cursor style for clickable elements */
 .seetrans p,
 .seeslok p {
     cursor: pointer;
 }
 
+/* Styles for hiding the checkbox input */
 input[type=checkbox] {
     display: none;
 }
 
+/* Styles for flipping the card on checkbox change */
 #flip:checked~* .slok {
     transform: rotateY(180deg);
 }
@@ -76,13 +88,15 @@ input[type=checkbox] {
     transform: rotateY(0deg);
 }
 
+/* Styles for the different sections of the card */
 .sanskrit,
 .transliteration,
 .hindi,
 .english {
-    margin: 10px
+    margin: 10px;
 }
 
+/* Styles for the headings in each section */
 .sanskrit h2,
 .transliteration h2,
 .hindi h2,
@@ -91,6 +105,7 @@ input[type=checkbox] {
     text-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 
+/* Media query for responsiveness on screens with a max-width of 768px */
 @media only screen and (max-width: 768px) {
     .card_cont {
         width: 350px;
@@ -111,6 +126,7 @@ input[type=checkbox] {
     }
 }
 
+/* Keyframes animation for the text shadow */
 @keyframes shadow {
     0% {
         text-shadow: 0px 0px 5px rgb(0, 0, 0);
