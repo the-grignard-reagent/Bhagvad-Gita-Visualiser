@@ -1,9 +1,11 @@
+/* Center class for flex container centering */
 .center {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+/* Styles for the main content container */
 .body_cont {
     position: relative;
     flex-direction: column;
@@ -14,11 +16,13 @@
     grid-gap: 100px;
 }
 
+/* Styles for the select elements container */
 .select {
     width: 100%;
     justify-content: space-evenly;
 }
 
+/* Styles for the select dropdowns */
 .select select {
     padding: 3%;
     border: 0;
@@ -31,7 +35,9 @@
     cursor: pointer;
 }
 
+/* Media query for responsiveness on screens with a max-width of 768px */
 @media only screen and (max-width: 768px) {
+    /* Adjusted styles for smaller screens */
     .body_cont {
         width: 300px;
         height: 210px;
