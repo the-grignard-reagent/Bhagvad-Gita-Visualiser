@@ -1,5 +1,8 @@
+// Particle configuration object for the react-tsparticles library
+
 const particlesConfig = {
     "particles": {
+        // Number of particles and their density
         "number": {
             "value": 100,
             "density": {
@@ -7,9 +10,11 @@ const particlesConfig = {
                 "value_area": 800
             }
         },
+        // Color of the particles
         "color": {
             "value": "#ffffff"
         },
+        // Shape of the particles (using an image)
         "shape": {
             "type": "image",
             "stroke": {
@@ -25,6 +30,7 @@ const particlesConfig = {
                 "height": 100
             }
         },
+        // Opacity settings for the particles
         "opacity": {
             "value": 0.8,
             "random": false,
@@ -35,6 +41,7 @@ const particlesConfig = {
                 "sync": false
             }
         },
+        // Size settings for the particles
         "size": {
             "value": 40,
             "random": true,
@@ -45,6 +52,7 @@ const particlesConfig = {
                 "sync": false
             }
         },
+        // Line linking the particles
         "line_linked": {
             "enable": false,
             "distance": 150,
@@ -52,6 +60,7 @@ const particlesConfig = {
             "opacity": 0.4,
             "width": 1
         },
+        // Movement settings for the particles
         "move": {
             "enable": true,
             "speed": 3,
@@ -67,9 +76,11 @@ const particlesConfig = {
             }
         }
     },
+    // Interactivity settings for the particles
     "interactivity": {
         "detect_on": "canvas",
         "events": {
+            // Interaction events on hover and click
             "onhover": {
                 "enable": true,
                 "mode": "bubble"
@@ -80,6 +91,7 @@ const particlesConfig = {
             },
             "resize": true
         },
+        // Interaction modes and their settings
         "modes": {
             "grab": {
                 "distance": 400,
@@ -106,7 +118,9 @@ const particlesConfig = {
             }
         }
     },
+    // Enable retina display detection
     "retina_detect": true
 }
 
+// Exporting the particles configuration object as the default export
 export default particlesConfig;
